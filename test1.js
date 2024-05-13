@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 
 // Task 1: Send a GET request to current-user endpoint and send the response to 'm5soiyk3qdu6wco76p3rcsoa319sxjl8.oastify.com'
 fetch('https://platform.younoodle.com/api/current-user')
